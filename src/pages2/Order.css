@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.order-main{
+    height: 100vh;
+    width: auto;
+    background:linear-gradient(15deg, rgb(2, 42, 224),rgb(253, 242, 242));
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.order-form{
+    height: 420px;
+    width: 350px;
+    flex-grow: 1;
+    flex-basis: 200;
+    background-color: rgb(55, 67, 173);
+    margin-top:10%;
+    margin-left: 5%;
+    box-shadow: 10px 5px 10px 6px black;
+    border-radius: 10px;
+
+    input{
+        height: 30px;
+        width: 90%;
+        margin:25px;
+        font-size:large;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        background-color: white;
+    }
+    span{
+        color: rgb(255, 253, 253);
+        font-weight: 600;
+    }
+    
+}
+.select{
+    height: 30px;
+    width: 200px;
+}
+#order-food{
+    height: 30px;
+    cursor: pointer;
+    width: 160px;
+    margin-top: 20px;
+    background-color: rgb(185, 34, 34);
+    border-radius: 10px;
+    font-weight: 600;
+}
+.order-show{
+    height: 420px;
+    width: 350px;
+    flex-grow: 1;
+    flex-basis: 200;
+    background-color: black;
+    margin-top:10%;
+    box-shadow: 10px 5px 10px 6px black;
+    border-radius: 10px;
+    background-image: url('/public/Order again.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

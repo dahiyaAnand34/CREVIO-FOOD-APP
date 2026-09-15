@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.h-main{
+    margin-top:50px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(128, 116, 116);
+}
+.upper-box{
+
+    background-color: rgb(192, 187, 170);
+    height: auto;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+.food-box{
+    height: auto;
+    width: 300px;
+    flex-basis:500;
+    flex-grow: 1;
+    color: whitesmoke;
+    background-color: rgba(104, 37, 32, 0.9);
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 1px 5px 3px black;
+    transform-origin: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 10ms;
+img{
+    height: 60%;
+    margin: 10px;
+    width: 90%;
+    box-shadow: 0px 0px 25px 0px black;
+    border-radius: 2%;
+}
+p{
+    font-weight: 800;
+    color: rgb(10, 255, 10);
+}
+#order{
+    height: 30px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border:none;
+    padding: 5px;
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: red;
+}
+}
+.food-box:hover{
+    transform:translateY(-10px);
+}

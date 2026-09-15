@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.s-nav{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(138, 8, 8);
+    position:absolute;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.box{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(230, 189, 10);
+}
+#chef-banner{
+    height:30%;
+    position: absolute;
+    margin-top: 230px;
+    right: 0%;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 2px solid black;
+}
+#search-tast{
+    height: 30px;
+    width: 55%;
+    position: absolute;
+    left: 1%;
+    background-color: whitesmoke;
+    padding: 5px;
+    color: black;
+    margin-top: 5px;
+    font-size: medium;
+    border-radius: 5px;
+    border: none;
+}
+.search-box{
+    background-color: rgb(243, 203, 71);
+    height: auto;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1000;
+    margin-top: 200px;
+}
+.search-card{
+    height: auto;
+    width: 250px;
+    flex-basis: 500;
+    flex-grow: 5;
+    color: whitesmoke;
+    background-color: rgba(133, 48, 23, 0.9);
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 1px 5px 3px black;
+img{
+    height: 60%;
+    margin: 10px;
+    width: 90%;
+    box-shadow: 0px 0px 25px 0px black;
+    border-radius: 2%;
+}
+p{
+    font-weight: 800;
+    color: rgb(10, 255, 10);
+}
+#order{
+    height: 25px;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+}
+.logo-black{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: aqua;
+    position: absolute;
+    right: 1%;
+    background-image: url('/public/big C.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+}
