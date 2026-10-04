@@ -1,7 +1,7 @@
 import "./Nav2.css";
 import { MenuData } from "./data/api.js";
 import { useState, useEffect } from "react";
-
+import {Link} from 'react-router-dom';
 function Nav2() {
     const [recipes, setRecipes] = useState([]);
     const [search, setSearch] = useState("");
@@ -46,12 +46,10 @@ const result = search.trim()
                         <h3>{item.name}</h3>
 
                         <p>PRICE ₹{item.userId}</p>
-                   <button
-  id="order"
-  onClick={() => window.location.href = "/order"}
->
-  ORDER
-</button>
+
+<Link to="/order">             
+    <button id="order" onClick={OrderC}>ORDER</button>                
+</Link>
                     
                     </div>
                 ))}
