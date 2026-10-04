@@ -1,7 +1,8 @@
 import "./Nav2.css";
 import { MenuData } from "./data/api.js";
 import { useState, useEffect } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 function Nav2() {
     const [recipes, setRecipes] = useState([]);
     const [search, setSearch] = useState("");
@@ -11,12 +12,12 @@ function Nav2() {
             setRecipes(data);
         });
     }, []);
-    
-const result = search.trim()
-    ? recipes.filter((item) =>
-        item.name.toLowerCase().includes(search.toLowerCase())
-      )
-    : [];
+
+    const result = search.trim()
+        ? recipes.filter((item) =>
+            item.name?.toLowerCase().includes(search.toLowerCase())
+        )
+        : [];
 
     return (
         <>
@@ -29,9 +30,7 @@ const result = search.trim()
                     onChange={(e) => setSearch(e.target.value)}
                 />
 
-                <div className="logo-black">
-                    
-                </div>
+                <div className="logo-black"></div>
             </div>
 
             <div className="box">
@@ -47,10 +46,9 @@ const result = search.trim()
 
                         <p>PRICE ₹{item.userId}</p>
 
-<Link to="/order">             
-    <button id="order" onClick={OrderC}>ORDER</button>                
-</Link>
-                    
+                        <Link to="/order">
+                            <button id="order">ORDER</button>
+                        </Link>
                     </div>
                 ))}
             </div>
