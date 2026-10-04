@@ -8,9 +8,6 @@ const[num,setNum] = useState('');
 const[flat,setFlat] = useState('');
 const[city,setCity] = useState('');
 
-  useEffect(()=>{
-    alert("Only case on delevery avelavel")
-  })
   
   function PayOrder(){
 if(name == "" || num == "" || flat == "" || city == ""){
